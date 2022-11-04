@@ -68,8 +68,13 @@ main .cta .btn {
     margin-bottom:1rem ;
 }
 
+.swiper-pagination {
+    position: relative;
+    margin-top: 1rem;
+}
+
 .book {
-    padding: 1rem; 
+    padding: 1rem;
     position: relative;
     border: 2px solid #32323230;
     display: flex;
@@ -77,6 +82,11 @@ main .cta .btn {
     align-items: center;
     flex-direction: column;
     gap:20px;
+    width: 100%;
+    min-height: 350px;
+}
+
+.book img {
     width: 100%;
 }
 
