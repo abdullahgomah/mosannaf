@@ -46,7 +46,7 @@ header .logo {
 }
 
 header .nav-bar {
-    flex:3;
+    flex:1;
     display: flex;
     justify-content: space-between;
     height: 100%;
@@ -58,6 +58,13 @@ header .nav-bar {
     display: flex;
     list-style: none;
     justify-content: space-around;
+}
+
+.list-item {
+    color: #f9f9f9; 
+    text-decoration: none; 
+    font-weight: bold;
+    font-size: 14px;
 }
 
 /* HEADER CTA  */
@@ -74,13 +81,6 @@ header .header-cta .btn {
     padding-left: 10px; 
     padding-right: 10px; 
     margin-right: 10px;
-}
-
-.list-item {
-    color: #f9f9f9; 
-    text-decoration: none; 
-    font-weight: bold;
-    font-size: 14px;
 }
 
 
@@ -140,27 +140,20 @@ header .header-cta .btn {
         gap: 30px;
     }
 
-
-
 }
 
 
 
 
 
-/* // Medium devices (tablets, 768px and up) */
+/* Medium dim responsive design for header */
 @media screen and (max-width: 991.98px) { 
     header  {position: relative;}
+
     header .container {
         position: relative;
     }
-    /* header {background: red} */
-    /* header .nav-bar {
-        width:100%;
-        position: absolute;
-        top: 80px;
-        
-    } */
+
     header .header-cta {
         position: absolute;
         top: 80px; 
@@ -225,27 +218,18 @@ header .header-cta .btn {
     .container {
         width: 750px !important;
     }
-    /* header .container {
-        width: 90% !important;
-    }
-    .books-section .container {
-        width: 90% !important; 
-        background: red;
-    } */
 
 } 
 
 
 
 
-
-
+/* this is main styles for some snippets in framework */
 
 
 .heading {
     font-family: "Lalezar", "Cairo", sans-serif;
 }
-
 
 
 .btn {
@@ -297,6 +281,9 @@ header .header-cta .btn {
 }
 
 
+
+/* this is main responsive rules for container */
+
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
     .container {
@@ -307,7 +294,7 @@ header .header-cta .btn {
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) { 
     .container {
-        width: 580px;
+        width: 560px;
     }
  } 
 
