@@ -61,6 +61,25 @@ main .cta .btn {
     /* width: 120px; */
 }
 
+main .header-cta {
+    display: none;
+}
+
+@media screen and (max-width: 575.98px) {
+    main .header-cta {
+        background-color: #323232;
+        width: 100%;
+        display: flex; 
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem;
+        flex-direction: row-reverse;
+    }
+    main .header-cta .btn {
+        width: fit-content;
+    }   
+}
+
 
 /* STYLE FOR BOOKS SECTION  */
 
@@ -87,7 +106,7 @@ main .cta .btn {
 }
 
 .book img {
-    width: 100%;
+    max-width: 100%;
 }
 
 .book::after {
