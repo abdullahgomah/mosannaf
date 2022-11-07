@@ -75,8 +75,13 @@ header .header-nav ul {
     font-family: "Cairo", sans-serif;
 }
 
+.list-item.black {
+    color: var(--primary-color);
+}
+
 /* HEADER CTA STYLING */
 header .cta { 
+    flex:2 !important;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -84,6 +89,36 @@ header .cta {
 header .cta .btn {
     margin-right: .5rem;
     font-size: 15px;
+}
+
+
+/* Responsive Header styling */
+
+@media screen and (max-width: 991px) {
+    header .header-nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header .container {
+        
+    }
+    header .cta {
+        display: none;
+        /* flex:2; */
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .sidebar {
+        width:100% !important; 
+        right:-100% !important;
+    }
+    .sidebar.active {
+        right:0 !important;
+    }
 }
 
 .btn {
@@ -112,4 +147,88 @@ header .cta .btn {
 
 .btn-outline-light {
     border: 2px solid var(--secondary-color);
+}
+
+/* Style for profile */
+.profile {
+    cursor:pointer;
+    margin-right: 2rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #f9f9f9;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.profile a {
+    font-size: 25px !important;
+    color: #323232;
+}
+
+/* sidebar styling */
+.sidebar {
+    width: 250px;
+    min-height: calc(100vh - 80px);
+    background-color: var(--primary-color);
+    /* background:#fff; */
+    padding: 1rem;
+    color: var(--secondary-color);
+    position: absolute;
+    right: -250px;
+    top: 80px;
+    z-index: 10000;
+    box-shadow: 0 6px 20px #32323240;
+    /* border-left: 2px solid #323232; */
+}
+
+
+
+.sidebar ul {
+    list-style-type: none;
+    line-height: 3;
+}
+
+.sidebar ul li {
+    margin-bottom:.5em ;
+    padding: 0 .5rem;
+}
+
+.sidebar ul li:hover {
+    background: #f9f9f920;
+}
+
+.sidebar ul li:last-child:hover {
+    background: transparent;
+}
+
+.sidebar .list-item i {
+    margin-left: .5rem;
+}
+
+.sidebar .cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 1rem;
+}
+.sidebar .cta a{
+    /* margin-bottom: 1rem; */
+    width: fit-content;
+}
+
+/* .sidebar::after {
+    content: "";
+    position: absolute;
+    right:250px; 
+    top: 0;
+    width: 100%;
+    background: #00000020;
+    height: calc(100vh - 80px);
+} */
+
+.sidebar.active {
+    right:0;
 }

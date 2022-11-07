@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header Examples</title>
+    <!-- CSS only -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,26 +19,70 @@
                 <i class="fa-solid fa-bars"></i>
             </div>
             <div class="logo">
-                <p class="logo-text">
-                    مصنف
-                </p>
+                <p class="logo-text">مصنف</p>
             </div>
-            <nav class="header-nav">
+            <div class="header-nav">
                 <ul>
                     <li><a href="#" class="list-item">الرئيسية</a></li>
                     <li><a href="#" class="list-item">المصنفات</a></li>
                     <li><a href="#" class="list-item">الكورسات</a></li>
                     <li><a href="#" class="list-item">اتصل بنا</a></li>
                 </ul>
-            </nav>
+            </div>
             <div class="cta">
                 <a href="#" class="btn btn-solid-light">دخول</a>
                 <a href="#" class="btn btn-outline-light">
-                    <i class="fa-solid fa-user"></i> 
+                    <i class="fa-solid fa-user"></i>
                     تسجيل حساب
+                </a>
+            </div>
+            <div class="profile">
+                <a href="#" class="list-item black">
+                    <i class="fas fa-user    "></i>
                 </a>
             </div>
         </div>
     </header>
+    <div class="sidebar">
+        <ul>
+            <li><a href="#" class="list-item">
+                <i class="fas fa-home    "></i>
+                الرئيسية
+            </a></li>
+            <li><a href="#" class="list-item">
+                <i class="fas fa-book    "></i>
+                المصنفات
+            </a></li>
+            <li><a href="#" class="list-item">
+                <i class="fas fa-video    "></i>
+                الكورسات
+            </a></li>
+            <li><a href="#" class="list-item">
+                <i class="fas fa-user    "></i>
+                الملف الشخصي
+            </a></li>
+            <li><a href="#" class="list-item">
+                <i class="fas fa-phone    "></i>
+                اتصل بنا
+            </a></li>
+            <li class="cta">
+                <a href="" class="btn btn-outline-light">دخول</a>
+                <a href="" class="btn btn-solid-light">جديد</a>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <script src="./jquery-3.6.1.slim.min.js"></script>
+
+    <script>
+        let humburger = document.querySelector('.humburger'),
+            sidebar = document.querySelector('.sidebar'); 
+        humburger.onclick = function () {
+            sidebar.classList.toggle('active');
+        }
+
+    </script>
 </body>
 </html>
