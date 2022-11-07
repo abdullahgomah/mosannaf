@@ -1,0 +1,115 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+
+/* Global Rules */
+:root {
+    --main-duration: .2s;
+    --primary-color: #323232;
+    --secondary-color: #FBFBFD;
+}
+
+
+/* Reset code */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all var(--main-duration) ease-in-out;
+    font-family: "Cairo", sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: var(--secondary-color);
+}
+
+/* Header Styling */
+header {
+    background: #323232;
+    height: 80px;
+    padding: 0 1rem;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+header .logo, header .cta {flex:1}
+header .header-nav {flex:2;}
+
+/* Humburger Styling */
+.humburger {
+    cursor: pointer;
+}
+.humburger i {
+    color: var(--secondary-color); 
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+/* HEADER LOGO STYLING */
+header .logo .logo-text {
+    color: var(--secondary-color); 
+    font-family: "Lalezar", "Cairo";
+    font-size: 50px;
+    
+}
+
+/* HEADER NAV STYLING */
+header .header-nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.list-item {
+    color: var(--secondary-color); 
+    text-decoration: none; 
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Cairo", sans-serif;
+}
+
+/* HEADER CTA STYLING */
+header .cta { 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header .cta .btn {
+    margin-right: .5rem;
+    font-size: 15px;
+}
+
+.btn {
+    padding: .5rem 1rem; 
+    border-radius:20px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    color: var(--secondary-color);
+    text-decoration: none;
+    height: fit-content;
+    min-width: 100px;
+    font-weight: bold;
+    height: 40px;
+}
+
+.btn i {
+    margin-left:.5rem;
+}
+
+.btn-solid-light {
+    background: var(--secondary-color); 
+    color: #323232;
+}
+
+.btn-outline-light {
+    border: 2px solid var(--secondary-color);
+}
