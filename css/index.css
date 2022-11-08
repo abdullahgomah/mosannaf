@@ -7,7 +7,7 @@
 
 main {
     height: calc(100vh - 80px); 
-    background: url("../assets/images/main-img.jpg");
+    background: url("../assets/images/main-img1.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,12 +16,22 @@ main {
     justify-content: center;
     align-items: center;
 }
+main::after {
+    content: "";
+    width: 100%;
+    height: calc(100% - 80px);
+    position: absolute;
+    background: #32323240;
+    top: 80px; 
+    left: 0;
+}
 
 main .container {
     display: flex;
     flex-direction: column; 
     align-items: center;
     justify-content: center;
+    z-index: 10;
 }
 
 main .container .intro-title {

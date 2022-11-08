@@ -18,38 +18,65 @@
 
 	<!-- Start Header -->
 
-	<header>
-		<div class="container">
-			<div class="logo">
-				مصنف
-			</div>
-
-			<nav class="nav-bar">
-				<nav class="sub-nav">
-					<ul>
-						<li><a href="#" class="list-item">الرئيسية</a></li>
-						<li><a href="#" class="list-item">الكورسات</a></li>
-						<li><a href="#" class="list-item">المصنفات</a></li>
-						<li><a href="#" class="list-item">المؤلفين</a></li>
-						<li><a href="#" class="list-item">اتصل بنا</a></li>
-					</ul>
-				</nav>
-
-			</nav>
-			<div class="header-cta">
-				<a href="" class="btn btn-solid-light">دخول</a>
-				<a href="" class="btn btn-outline-light">
-					تسجيل حساب
-				</a>
-			</div>
-
-			<div class="humburger">
-				<div class="line"></div>
-				<div class="line"></div>
-				<div class="line"></div>
-			</div>
-		</div>
-	</header>
+    <header>
+        <div class="container">
+            <div class="humburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="logo">
+                <p class="logo-text">مصنف</p>
+            </div>
+            <div class="header-nav">
+                <ul>
+                    <li><a href="#" class="list-item">الرئيسية</a></li>
+                    <li><a href="#" class="list-item">المصنفات</a></li>
+                    <li><a href="#" class="list-item">الكورسات</a></li>
+                    <li><a href="#" class="list-item">اتصل بنا</a></li>
+                </ul>
+            </div>
+            <div class="cta">
+                <a href="#" class="btn btn-solid-light">دخول</a>
+                <a href="#" class="btn btn-outline-dark">
+                    <i class="fa-solid fa-user"></i>
+                    تسجيل حساب
+                </a>
+            </div>
+            <div class="profile">
+                <a href="#" class="list-item black">
+                    <img src="./assets/images/profile-img.jpg" class="profile-img" alt="">
+                    <!-- <i class="fas fa-user    "></i> -->
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="sidebar">
+        <ul>
+            <li><a href="#" class="list-item">
+                <i class="fas fa-home    "></i>
+                الرئيسية
+            </a></li>
+            <li><a href="#" class="list-item">
+                <i class="fas fa-book    "></i>
+                المصنفات
+            </a></li>
+            <li><a href="#" class="list-item">
+                <i class="fas fa-video    "></i>
+                الكورسات
+            </a></li>
+            <li><a href="#" class="list-item">
+                <i class="fas fa-user    "></i>
+                الملف الشخصي
+            </a></li>
+            <li><a href="#" class="list-item">
+                <i class="fas fa-phone    "></i>
+                اتصل بنا
+            </a></li>
+            <li class="cta">
+                <a href="" class="btn btn-outline-dark">دخول</a>
+                <a href="" class="btn btn-solid-light">جديد</a>
+            </li>
+        </ul>
+    </div>
 
 	<main>
 		<div class="container">
@@ -64,10 +91,10 @@
 				<a href="#" class="btn btn-outline-light">بحث متقدم</a>
 			</div>
 
-			<div class="header-cta">
+			<!-- <div class="header-cta">
 				<a href="" class="btn btn-solid-light">دخول</a>
 				<a href="" class="btn btn-outline-light">تسجيل حساب</a>
-			</div>
+			</div> -->
 
 		</div>
 	</main>
@@ -163,6 +190,15 @@
 	<script src="./js/swiper.js"></script>
 
 	<script src="./js/main.js"></script>
+
+	<script>
+        let humburger = document.querySelector('.humburger'),
+            sidebar = document.querySelector('.sidebar'); 
+        humburger.onclick = function () {
+            sidebar.classList.toggle('active');
+        }
+
+    </script>
 
 	<!-- <script>
 		var swiper = new Swiper(".mySwiper", {
