@@ -166,11 +166,13 @@ header .cta .btn {
     /* background:#fff; */
     padding: 1rem;
     color: var(--secondary-color);
-    position: absolute;
+    position: fixed;
     right: -250px;
     top: 80px;
-    z-index: 10000;
-    /* box-shadow: 0 6px 20px #32323240; */
+    /* bottom: 0; */
+    z-index: 9000;
+    box-shadow: -5px 6px 15px #32323240;
+    /* filter: drop-shadow(0 6px 15px #32323240); */
     /* border-left: 2px solid #323232; */
 }
 
