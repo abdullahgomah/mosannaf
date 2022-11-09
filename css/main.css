@@ -19,6 +19,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     transition: all var(--main-duration) ease-in-out;
+    font-family: 'cairo', sans-serif;
 }
 
 html {
@@ -223,7 +224,7 @@ header .cta .btn {
 } */
 
 .sidebar.active {
-    right:0;
+    right: 0;
     z-index: 10000;
 }
 
@@ -234,7 +235,12 @@ header .cta .btn {
 
 
 .heading {
-    font-family: "Lalezar", "Cairo", sans-serif;
+    font-size: 25px;
+    color: var(--secondary-color);
+}
+
+.heading h1 {
+    font-family: 'Lalezar';
 }
 
 
