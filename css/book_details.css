@@ -1,0 +1,125 @@
+.main {
+    /* test code */
+    /* background: red; */
+}
+
+.main .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0;
+    align-items: center;
+}
+
+.main .container .intro {width:500px}
+.main .container .cover { width: 250px; border: 2px solid #32323230;}
+
+.main .container .heading {
+    font-size: 50px;
+    line-height: 1.5;
+}
+
+/* main intro style */
+.main .container .intro .author {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.main .container .intro .rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1rem ;
+}
+
+.main .container .intro .stars {
+    color: var(--gold-color);
+    font-size: 30px;
+}
+
+.main .container .intro .rating_count {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+
+/* main cover style */
+.main .cover {
+    /* test cover */
+    /* padding: 1rem; */
+}
+
+.main .cover .img {
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    /* margin: 1rem 0; */
+    position: relative;
+}
+
+.main .cover .img img {
+    /* height: 100%; */
+    width: 80%;
+    margin-top: .5rem;
+}
+
+.main .cover .img::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: #F6F4E3;
+}
+.main .cover .cta {
+    margin-top: 20px;
+    padding: 0 .5rem;
+}
+.main .cover .cta .btn {
+    margin-bottom: .5rem ;
+    border-radius: 5px;
+}
+
+/* responsive style for main section */
+
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+} 
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+    .main .container {
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+
+    .main .intro, .cover {
+        max-width: 100%;
+    }
+    .main .heading {
+        font-size: 30px !important;
+    }
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+} 
