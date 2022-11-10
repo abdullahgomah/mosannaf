@@ -317,7 +317,7 @@ main .header-cta {
 
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 400px) {
     main .cta {
         flex-direction: column;
         flex-wrap: wrap;
