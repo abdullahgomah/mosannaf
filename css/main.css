@@ -237,8 +237,8 @@ main {
     background: url("../assets/images/main-img1.jpg");
     background-position: center center;
     background-repeat: no-repeat;
-    /* background-size: cover; */
-    background-size: 1000px, 1000px;
+    background-size: cover; 
+    background-attachment: fixed;
     max-width: 100%;
     display: flex;
     justify-content: center;
@@ -314,6 +314,7 @@ main .header-cta {
     main .header-cta .btn {
         width: fit-content;
     }   
+
 
 }
 
@@ -399,12 +400,20 @@ main .header-cta {
     .container {
         width: 90% !important;
     }
+    main .search {
+        position: relative;
+        width: 90%;
+    }
 }
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) { 
     .container {
         width: 560px !important;
+    }
+    main .search {
+        position: relative;
+        width: 90%;
     }
  } 
 
