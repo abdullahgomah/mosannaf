@@ -314,6 +314,14 @@ main .header-cta {
     main .header-cta .btn {
         width: fit-content;
     }   
+
+}
+
+@media screen and (max-width: 300px) {
+    main .cta {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
 
 
