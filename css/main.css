@@ -123,7 +123,7 @@ header .cta .btn {
 
 @media screen and (max-width: 500px) {
     .sidebar {
-        width:100% !important; 
+        width:fit-content !important; 
         right:-100% !important;
     }
     .sidebar.active {
