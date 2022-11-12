@@ -168,7 +168,7 @@ header .cta .btn {
 
 /* sidebar styling */
 .sidebar {
-    width: 250px;
+    width: 200px;
     min-height: calc(100vh - 80px);
     background-color: var(--primary-color);
     /* background:#fff; */
@@ -214,10 +214,11 @@ header .cta .btn {
     align-items: center;
     gap: .5rem;
     margin-top: 1rem;
+    flex-direction: column;
 }
 .sidebar .cta a{
     /* margin-bottom: 1rem; */
-    width: fit-content;
+    width: 100%;
 }
 
 /* .sidebar::after {
