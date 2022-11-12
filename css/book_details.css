@@ -6,7 +6,7 @@
 .main .container {
     display: flex;
     justify-content: space-between;
-    padding: 3rem 0;
+    margin: 3rem auto;
     align-items: center;
 }
 
@@ -123,3 +123,45 @@
 @media (min-width: 1200px) {
 
 } 
+
+
+/* more details section */
+.more-details {
+}
+
+.more-details .container {
+    display: grid;
+    margin: 3rem auto;
+}
+
+.about-book {
+    /* width: 70%; */
+}
+
+.about-book p {
+    line-height: 2;
+    text-align: justify;
+}
+
+.table {
+    margin-top: 3rem ;
+}
+
+.table .properties {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    line-height: 3.5;
+    align-items: center;
+    /* align-content: center; */
+    /* background: red;  */
+    /* justify-items: center; */
+}
+
+.table .property {
+    font-weight: bold;
+}
+
+.table .value {
+    font-weight: normal;
+    text-decoration: underline;
+}
