@@ -118,7 +118,14 @@ header .cta .btn {
     header .cta {
         display: none;
     }
-
+    .sidebar .cta {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .sidebar .cta a {
+        width: 100% !important;
+    }
 }
 
 @media screen and (max-width: 500px) {
