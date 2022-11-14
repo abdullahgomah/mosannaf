@@ -361,9 +361,12 @@ main .header-cta {
     text-decoration: none;
     height: fit-content;
     min-width: 100px;
+    max-width: 100%;
     font-weight: bold;
     height: 40px;
     user-select: none;
+    outline: none;
+    border:0;
 }
 
 .btn i {
