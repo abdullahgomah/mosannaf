@@ -1,3 +1,8 @@
+.stars i {
+    color: var(--gold-color) !important; 
+}
+
+
 .main {
     /* test code */
     /* background: red; */
@@ -33,7 +38,6 @@
 }
 
 .main .container .intro .stars {
-    color: var(--gold-color);
     font-size: 30px;
 }
 
@@ -164,4 +168,59 @@
 .table .value {
     font-weight: normal;
     text-decoration: underline;
+}
+
+
+
+
+/* feedback section */
+.feedbacks {
+    /* background: red; */
+    padding: 1rem;
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+    gap:1rem;
+    padding:2rem 0;
+    border-bottom: 2px solid #32323230;
+}
+
+.feedback-account {
+    display: flex;
+    justify-content: center;
+    gap: .5rem; 
+    width: fit-content;
+    flex-direction: column;
+}
+
+.feedback-account__user{
+    font-weight: bold;
+}
+
+.feedback-account__rate {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    font-weight: bold;
+}
+
+
+
+.feedback-account__rate p {
+    text-decoration: underline;
+}
+
+
+.feedback-details {
+    width: max-content;
+    width: 80%;
+    font-weight: 600;
+}
+
+.feedbacks .btn {
+    margin-top:1rem; 
+    width: fit-content;
 }
