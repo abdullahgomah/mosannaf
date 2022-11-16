@@ -139,7 +139,7 @@ header .cta .btn {
     margin-left:.5rem;
 }
 
-.btn-solid-light {
+.btn-solid-dark {
     background: var(--secondary-color); 
     /* background: var(--primary-color-color);  */
     color: var(--primary-color);

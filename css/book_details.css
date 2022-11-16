@@ -87,6 +87,7 @@
 .main .cover .cta .btn {
     margin-bottom: .5rem ;
     border-radius: 5px;
+    width: 100%;
 }
 
 /* responsive style for main section */

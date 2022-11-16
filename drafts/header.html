@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,11 @@
     <title>Header Examples</title>
     <!-- CSS only -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./header.css">
 </head>
+
 <body>
     <!-- This is header -->
     <header>
@@ -30,7 +32,7 @@
                 </ul>
             </div>
             <div class="cta">
-                <a href="#" class="btn btn-solid-light">دخول</a>
+                <a href="#" class="btn btn-solid-dark">دخول</a>
                 <a href="#" class="btn btn-outline-light">
                     <i class="fa-solid fa-user"></i>
                     تسجيل حساب
@@ -47,28 +49,28 @@
     <div class="sidebar">
         <ul>
             <li><a href="#" class="list-item">
-                <i class="fas fa-home    "></i>
-                الرئيسية
-            </a></li>
+                    <i class="fas fa-home    "></i>
+                    الرئيسية
+                </a></li>
             <li><a href="#" class="list-item">
-                <i class="fas fa-book    "></i>
-                المصنفات
-            </a></li>
+                    <i class="fas fa-book    "></i>
+                    المصنفات
+                </a></li>
             <li><a href="#" class="list-item">
-                <i class="fas fa-video    "></i>
-                الكورسات
-            </a></li>
+                    <i class="fas fa-video    "></i>
+                    الكورسات
+                </a></li>
             <li><a href="#" class="list-item">
-                <i class="fas fa-user    "></i>
-                الملف الشخصي
-            </a></li>
+                    <i class="fas fa-user    "></i>
+                    الملف الشخصي
+                </a></li>
             <li><a href="#" class="list-item">
-                <i class="fas fa-phone    "></i>
-                اتصل بنا
-            </a></li>
+                    <i class="fas fa-phone    "></i>
+                    اتصل بنا
+                </a></li>
             <li class="cta">
                 <a href="" class="btn btn-outline-light">دخول</a>
-                <a href="" class="btn btn-solid-light">جديد</a>
+                <a href="" class="btn btn-solid-dark">جديد</a>
             </li>
         </ul>
     </div>
@@ -79,11 +81,12 @@
 
     <script>
         let humburger = document.querySelector('.humburger'),
-            sidebar = document.querySelector('.sidebar'); 
+            sidebar = document.querySelector('.sidebar');
         humburger.onclick = function () {
             sidebar.classList.toggle('active');
         }
 
     </script>
 </body>
+
 </html>
