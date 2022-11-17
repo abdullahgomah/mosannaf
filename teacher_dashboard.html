@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>مصنف … صفحة المعلم</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/dashboard.css">
+</head>
+
+<body>
+
+    <!-- Start Header -->
+
+    <header>
+        <div class="container">
+            <div class="humburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="logo">
+                <a class="logo-text">مصنف</a>
+            </div>
+            <div class="header-nav">
+                <ul>
+                    <li><a href="#" class="list-item">الرئيسية</a></li>
+                    <li><a href="#" class="list-item">المصنفات</a></li>
+                    <li><a href="#" class="list-item">الكورسات</a></li>
+                    <li><a href="#" class="list-item">اتصل بنا</a></li>
+                </ul>
+            </div>
+            <div class="cta">
+                <a href="#" class="btn btn-solid-dark">دخول</a>
+                <a href="#" class="btn btn-outline-dark">
+                    <i class="fa-solid fa-user"></i>
+                    تسجيل حساب
+                </a>
+            </div>
+            <div class="profile">
+                <a href="#" class="list-item black">
+                    <img src="./assets/images/profile-img.jpg" class="profile-img" alt="">
+                    <!-- <i class="fas fa-user    "></i> -->
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- sidebar -->
+    <div class="sidebar">
+        <ul>
+            <li><a href="#" class="list-item">
+                    <i class="fas fa-home    "></i>
+                    الرئيسية
+                </a></li>
+            <li><a href="#mainwoman" class="list-item">
+                    <i class="fas fa-book    "></i>
+                    المصنفات
+                </a></li>
+            <li><a href="#" class="list-item">
+                    <i class="fas fa-video    "></i>
+                    الكورسات
+                </a></li>
+            <li><a href="#" class="list-item">
+                    <i class="fas fa-user    "></i>
+                    الملف الشخصي
+                </a></li>
+            <li><a href="#" class="list-item">
+                    <i class="fas fa-phone    "></i>
+                    اتصل بنا
+                </a></li>
+            <li class="cta">
+                <a href="" class="btn btn-outline-dark">دخول</a>
+                <a href="" class="btn btn-solid-dark">جديد</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="dashboard">
+        <div class="container">
+            <p class="dashboard-title">صفحة المعلم</p>
+            <div class="heading">
+                <h1>أهلاً محمد,</h1>
+                <a href="#" class="btn btn-solid-dark">تعديل البروفايل</a>
+            </div>
+            <div class="grid">
+                <div class="item courses">
+                    <img src="./assets/images/courses-background.jpg" alt="">
+                    <a href="#">
+                        <h1>الكورسات</h1>
+                    </a>
+                    <h1>3</h1>
+                    <p>المجموع</p>
+                    <a href="#" class="btn">+</a>
+                </div>
+                <div class="item quizes">
+                    <img src="./assets/images/quiz-img.jpg" alt="">
+                    <a href="">
+                        <h1>الاختبارات</h1>
+                    </a>
+                    <h1>19</h1>
+                    <p>المجموع</p>
+                    <a href="#" class="btn btn-solid-light">+</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+
+    <script src="./js/main.js"></script>
+
+    <script>
+        let humburger = document.querySelector('.humburger'),
+            sidebar = document.querySelector('.sidebar');
+        humburger.onclick = function () {
+            sidebar.classList.toggle('active');
+        }
+
+    </script>
+
+    <!-- <script>
+		var swiper = new Swiper(".mySwiper", {
+			slidesPerView: 4,
+			spaceBetween: 30,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+		});
+	</script> -->
+
+</body>
+
+</html>
