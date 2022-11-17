@@ -19,6 +19,8 @@
     gap: 1rem;
     width: 90% !important;
     margin: 0 auto;
+    justify-content: center;
+
 }
 
 .item {
@@ -29,7 +31,8 @@
     align-items: center;
     flex-direction: column;
     border-radius: 1rem;
-    width: 400px;
+    width: 420px;
+    max-width: 90vw !important;
     height: 290px;
     position: relative;
     box-shadow: 0 6px 10px #00000050;
@@ -70,9 +73,13 @@
 @media (max-width: 700.98px) { 
     .item {
         width: 90% !important;
-        margin: 0rem auto;
+        margin: 0rem auto !important;
     }
-    .container {
-        /* padding: 1rem !important; */
+}
+
+@media (max-width: 300px) {
+    .dashboard .heading {
+        flex-direction: column;
+        margin-bottom: 1rem;
     }
 }
