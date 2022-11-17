@@ -17,6 +17,8 @@
 
 .grid {
     gap: 1rem;
+    width: 90% !important;
+    margin: 0 auto;
 }
 
 .item {
@@ -27,8 +29,7 @@
     align-items: center;
     flex-direction: column;
     border-radius: 1rem;
-    width: 415px;
-    max-width: 100vw;
+    width: 400px;
     height: 290px;
     position: relative;
     box-shadow: 0 6px 10px #00000050;
@@ -42,6 +43,7 @@
     top:0;
     left: 0;
     width: 100%; 
+    max-width: 100%;
     height: 100%; 
     object-fit: cover;
     z-index: -1;
@@ -61,4 +63,16 @@
     background: var(--primary-color);
     font-size: 25px;
     box-shadow: 0 4px 4px #32323220;
+}
+
+
+
+@media (max-width: 700.98px) { 
+    .item {
+        width: 90% !important;
+        margin: 0rem auto;
+    }
+    .container {
+        /* padding: 1rem !important; */
+    }
 }
