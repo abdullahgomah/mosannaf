@@ -7,6 +7,7 @@
     --primary-color: #f9f9f9;
     --secondary-color: #323232;
     --gold-color: #E47B01;
+    --danger-color: #dc3545;
     /* --secondary-color: #FBFBFD; */
 }
 
@@ -384,7 +385,10 @@ main .header-cta {
     border: 2px solid var(--secondary-color);
     color: var(--secondary-color);
 }
-
+.btn-solid-danger {
+    background-color: var(--danger-color) !important;
+    color: var(--primary-color) !important;
+}
 /* .btn-outline-dark:hover {
     background: #323232;
     color: var(--primary-color);
